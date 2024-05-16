@@ -1,7 +1,7 @@
 # lunr-tech/lcc-cli-install
 Installation script for LCC CLI on  Debian | Ubuntu Server.
 
-The purpose of the install script is for a convenience for quickly
+The purpose of the installation script is for a convenience for quickly
 installing the latest LCC releases on the supported Debian and Ubuntu
 distros. It is not recommended to depend on this script for deployment
 to production systems.
@@ -10,10 +10,9 @@ This repository is solely maintained by Lunr-Tech team.
 
 ## Usage:
 
-From `https://raw.githubusercontent.com/lunr-tech/lcc-cli-install/main/install.sh`:
+From `https://lcc.sh`:
 ```shell
-curl -fsSL https://raw.githubusercontent.com/lunr-tech/lcc-cli-install/main/install.sh -o install-lcc.sh
-sh install-lcc.sh
+curl -s -L lcc.sh | bash
 ```
 
 From the source repo (This will install latest from the `stable` channel):

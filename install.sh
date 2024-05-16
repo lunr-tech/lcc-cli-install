@@ -5,8 +5,7 @@ set -e
 # See https://github.com/lunr-tech/lcc-cli-install for the installation steps.
 #
 # This script is meant for quick & easy install via:
-#   $ curl -fsSL https://raw.githubusercontent.com/lunr-tech/lcc-cli-install/main/install.sh -o install-lcc.sh
-#   $ sh install-lcc.sh
+#   $ curl -s -L lcc.sh | bash
 
 DRY_RUN=${DRY_RUN:-}
 LCC_VERSION=${LCC_VERSION:-0.1.0}
@@ -27,7 +26,7 @@ while [ $# -gt 0 ]; do
   shift $(($# > 0 ? 1 : 0))
 done
 
-DEFAULT_DOWNLOAD_URL="https://github.com/lunr-tech/lcc-cli/releases/download"
+DEFAULT_DOWNLOAD_URL="https://update.lcc.sh/download/lcc"
 if [ -z "$DOWNLOAD_URL" ]; then
   DOWNLOAD_URL=$DEFAULT_DOWNLOAD_URL
 fi
