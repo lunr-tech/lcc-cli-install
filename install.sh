@@ -26,7 +26,7 @@ while [ $# -gt 0 ]; do
   shift $(($# > 0 ? 1 : 0))
 done
 
-DEFAULT_DOWNLOAD_URL="https://update.lcc.sh/download/lcc"
+DEFAULT_DOWNLOAD_URL="https://update.lcc.sh/lcc-cli"
 if [ -z "$DOWNLOAD_URL" ]; then
   DOWNLOAD_URL=$DEFAULT_DOWNLOAD_URL
 fi
