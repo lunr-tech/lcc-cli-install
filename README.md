@@ -12,7 +12,7 @@ This repository is solely maintained by Lunr-Tech team.
 
 From `https://lcc.sh`:
 ```shell
-curl -s -L lcc.sh | bash
+bash <(wget -qO- lcc.sh)
 ```
 
 From the source repo (This will install latest from the `stable` channel):
