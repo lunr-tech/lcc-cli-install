@@ -90,7 +90,7 @@ install() {
   $exec_command "source /usr/local/lib/lcc/bin/activate && python3 -m pip install --upgrade pip && python3 -m pip install ansible docker websocket jsondiff firewall >/dev/null && ansible-galaxy collection install ansible.posix community.docker >/dev/null"
   $exec_command "wget -O /tmp/lcc-cli.tar.gz $DOWNLOAD_URL/v$LCC_VERSION/lcc-cli.v$LCC_VERSION.tar.gz"
   $exec_command "cd /tmp && tar -xzvf lcc-cli.tar.gz && rm -f lcc-cli.tar.gz"
-  $exec_command "source /usr/local/lib/lcc/bin/activate && pip install /tmp/lcc_cli-$LCC_VERSION-py3-none-any.whl && lcc-cli init"
+  $exec_command "source /usr/local/lib/lcc/bin/activate && pip install /tmp/lcc_cli-$LCC_VERSION-py3-none-any.whl && printf \"\033c\" && lcc-cli init"
 }
 
 install
