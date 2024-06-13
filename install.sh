@@ -8,7 +8,7 @@ set -e
 #   $ curl -s -L lcc.sh | bash
 
 DRY_RUN=${DRY_RUN:-}
-LCC_VERSION=${LCC_VERSION:-0.1.0}
+LCC_VERSION=${LCC_VERSION:-0.1.1}
 
 while [ $# -gt 0 ]; do
   case "$1" in
